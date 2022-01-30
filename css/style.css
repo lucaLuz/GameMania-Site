@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rajdhani:wght@500&family=Rambla&family=Rosarivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rajdhani:wght@500&family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rambla&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    height: 84px;
+}
+.container-grid{
+    width: 1920px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img, svg{
+    width: 313px;
+}
+.menu a{
+    margin: 0 20;
+    padding: 0 42px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Rambla', sans-serif;
+    text-transform: lowercase;
+    font-size: 40px;
+}
+.menu{
+    width: 1458px;
+    display: flex;
+}
+.login{
+    margin: 0 273px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Rosarivo', serif;
+}
+.posicao-texto{
+ margin: 0 15px;
+ padding: 0 200px;   
+}
+.banner{
+    height: 624px;
+    background-image:url("../img/Group\ 2.png") ;
+    background-repeat:none ;
+    background-size: cover;
+}
+.texto-banner h1{
+    width: 712px;
+    height: 344px;
+    color: black;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;    
+    font-size: 144px;
+}
+.texto-banner p{
+    width: 506px;
+    height: 76px;
+    margin: 0 0 0 96px;
+    color: black;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 64px;
+}
+.texto-banner-2{
+    width: 596px;
+    color: white;
+    text-align: inherit;
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 64px;
+    justify-content: left;
+}
+
