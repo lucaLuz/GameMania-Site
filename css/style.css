@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rajdhani:wght@500&family=Rambla&family=Rosarivo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rajdhani:wght@500&family=Rambla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rajdhani:wght@500&family=Rambla&family=Rosarivo&family=Source+Serif+4:wght@300&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -22,8 +20,7 @@ img, svg{
     width: 313px;
 }
 .menu a{
-    margin: 0 20;
-    padding: 0 42px;
+    margin: 0 42px;
     color: white;
     text-decoration: none;
     font-family: 'Rambla', sans-serif;
@@ -31,15 +28,24 @@ img, svg{
     font-size: 40px;
 }
 .menu{
-    width: 1458px;
+    width: 912px;
     display: flex;
 }
+.login a{
+    margin: 0px 18px 0px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Rosarivo', serif;
+    font-size: 40px;
+}
 .login{
-    margin: 0 273px;
+    width: 167px;
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
-    font-family: 'Rosarivo', serif;
+}
+.barras{
+    width: 100px;
+    display: none;
 }
 .posicao-texto{
  margin: 0 15px;
@@ -68,7 +74,7 @@ img, svg{
     font-family: 'Rajdhani', sans-serif; 
     font-size: 64px;
 }
-.texto-banner-2{
+.texto2{
     width: 596px;
     color: white;
     text-align: inherit;
@@ -76,4 +82,159 @@ img, svg{
     font-size: 64px;
     justify-content: left;
 }
-
+.area-pesquisa{
+    background-color: black;
+    height: 147px;
+}
+.area-pesquisa input[type="search"]{
+    background-color: #3B2E46;
+    border: 0px;
+    width: 1027px;
+    height: 100px;
+    border-radius: 50px;
+}
+input{
+    margin:24px 0px 0px;
+    padding: 0px 100px 0px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    margin: -120px
+}
+label{
+    margin: 0px 464px;
+}
+.area-pesquisa input[type="search"]::placeholder{
+    width: 250px;
+    height: 96px;
+    font-size: 50px;
+}
+.area-pesquisa img{ 
+    width: 80px;
+}
+.area-icones{
+    background-color: #92879C;
+    height: 388px;
+}
+.icones img{
+    width: 208px;
+    margin: 147px 56px 0px;
+    vertical-align: baseline;
+}
+.loja-icone img{
+    width: 161px;
+}
+.carrousel-produtos{
+    height: 300px;
+    background-image: url(../img/Group\ 4.png);
+}
+.secao-noticias{
+    height: 1230px;
+    background-image: url(../img/Group\ 3.png);
+    background-repeat: none;
+    background-size: cover;
+}
+.texto-sobre{
+    color: white;
+    margin: 0 0 0 527px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.texto-sobre h2{
+    margin: 66px 0px;
+    font-weight: 900;
+    font-family: 'Source Serif 4',sans-serif;
+    font-size: 96px;
+}
+.texto-sobre p{
+    font-size: 48px;
+    font-family:'Source Serif 4',sans-serif ;
+    margin: 0 250px;
+}
+@media screen and (max-width: 1200px){
+    .logo-gamemania{
+        margin: 0 0 0 271px;
+        width: 200px;
+    }
+    .menu {
+        display: none;
+    }
+    .login{
+        width: 783px;
+        justify-content: flex-start;
+    }
+    .login a{
+        margin: 0px 13px 0px;
+        font-size: 24px;
+    }
+    .barras{
+        margin: 0 -1857px;
+        padding: 20px;
+        align-items: center;
+        display: inline-block;
+    }
+    .banner{
+        height: 269PX;
+    }
+    .posicao-texto{
+        margin: 0 -158px 0;
+        padding: 213px;
+    }
+    .texto-banner h1{
+        width: 310px;
+        margin: 13px;
+        height: 180px;
+        font-size: 60px;
+    }
+    .texto-banner p{
+        width: 296px;
+        height: 141px;
+        margin: -57px 0 0 12px;
+        font-size: 24px;
+    }
+    .texto2{
+        margin: 365px;
+        font-size: 30px;
+    }
+    .texto2 p{
+        margin: 7px 33px 169px;
+    }
+    .area-pesquisa{
+        height: 72px;
+    }
+}
+@media screen and (max-width: 768px){
+    .logo-gamemania{
+        margin: 278px;
+        width: 187px;
+    }
+    .menu{
+        display: none;
+    }
+    .barras{
+        margin: 0 -1895px;
+        padding: 18px;
+        flex-direction: column;
+        display: inline-block;
+    }
+}
+.secao-marcas{
+    height: 100px;
+    background-color: black;
+}
+.marcas img{
+    width: 300px;
+    margin: -6px 94px 0px;
+}
+.riot img{
+    width: 150px;
+}
+.razer img{
+    width: 390px;
+}
+footer{
+    height: 392px;
+    background-color: #281845;
+}
