@@ -47,6 +47,9 @@ img, svg{
     width: 100px;
     display: none;
 }
+.posicionamento-header{
+    position: relative;
+    }
 .posicao-texto{
  margin: 0 15px;
  padding: 0 200px;   
@@ -125,9 +128,12 @@ label{
 .loja-icone img{
     width: 161px;
 }
-.carrousel-produtos{
+.carrousel{
     height: 300px;
     background-image: url(../img/Group\ 4.png);
+}
+.produtos-carrousel img{
+    margin: 0px 92px;
 }
 .secao-noticias{
     height: 1230px;
@@ -153,73 +159,6 @@ label{
     font-family:'Source Serif 4',sans-serif ;
     margin: 0 250px;
 }
-@media screen and (max-width: 1200px){
-    .logo-gamemania{
-        margin: 0 0 0 271px;
-        width: 200px;
-    }
-    .menu {
-        display: none;
-    }
-    .login{
-        width: 783px;
-        justify-content: flex-start;
-    }
-    .login a{
-        margin: 0px 13px 0px;
-        font-size: 24px;
-    }
-    .barras{
-        margin: 0 -1857px;
-        padding: 20px;
-        align-items: center;
-        display: inline-block;
-    }
-    .banner{
-        height: 269PX;
-    }
-    .posicao-texto{
-        margin: 0 -158px 0;
-        padding: 213px;
-    }
-    .texto-banner h1{
-        width: 310px;
-        margin: 13px;
-        height: 180px;
-        font-size: 60px;
-    }
-    .texto-banner p{
-        width: 296px;
-        height: 141px;
-        margin: -57px 0 0 12px;
-        font-size: 24px;
-    }
-    .texto2{
-        margin: 365px;
-        font-size: 30px;
-    }
-    .texto2 p{
-        margin: 7px 33px 169px;
-    }
-    .area-pesquisa{
-        height: 72px;
-    }
-}
-@media screen and (max-width: 768px){
-    .logo-gamemania{
-        margin: 278px;
-        width: 187px;
-    }
-    .menu{
-        display: none;
-    }
-    .barras{
-        margin: 0 -1895px;
-        padding: 18px;
-        flex-direction: column;
-        display: inline-block;
-    }
-}
 .secao-marcas{
     height: 100px;
     background-color: black;
@@ -227,7 +166,7 @@ label{
 .marcas img{
     width: 300px;
     margin: -6px 94px 0px;
-}
+    }
 .riot img{
     width: 150px;
 }
@@ -235,6 +174,32 @@ label{
     width: 390px;
 }
 footer{
-    height: 392px;
     background-color: #281845;
+}
+.rodape{
+    justify-content: space-between;
+    display: flex;
+    padding: 120px 0px;
+}
+.links-footer{
+    justify-content: space-around;
+    display: flex;
+    width: 1373px;
+}
+.links a{
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rambla', sans-serif;
+}
+.contatos{
+    padding: 157px 169px;
+}
+.contatos h2{
+    color: white;
+    font-family: 'Rambla', sans-serif;
+    text-align: center;
+}
+.contatos img{
+    width: 100px;
 }
