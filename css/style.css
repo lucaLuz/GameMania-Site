@@ -47,6 +47,9 @@ img, svg{
     width: 100px;
     display: none;
 }
+.posicionamento-header{
+    position: relative;
+    }
 .posicao-texto{
  margin: 0 15px;
  padding: 0 200px;   
@@ -125,9 +128,12 @@ label{
 .loja-icone img{
     width: 161px;
 }
-.carrousel-produtos{
+.carrousel{
     height: 300px;
     background-image: url(../img/Group\ 4.png);
+}
+.produtos-carrousel img{
+    margin: 0px 92px;
 }
 .secao-noticias{
     height: 1230px;
@@ -160,7 +166,7 @@ label{
 .marcas img{
     width: 300px;
     margin: -6px 94px 0px;
-}
+    }
 .riot img{
     width: 150px;
 }
@@ -168,6 +174,32 @@ label{
     width: 390px;
 }
 footer{
-    height: 392px;
     background-color: #281845;
+}
+.rodape{
+    justify-content: space-between;
+    display: flex;
+    padding: 120px 0px;
+}
+.links-footer{
+    justify-content: space-around;
+    display: flex;
+    width: 1373px;
+}
+.links a{
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rambla', sans-serif;
+}
+.contatos{
+    padding: 157px 169px;
+}
+.contatos h2{
+    color: white;
+    font-family: 'Rambla', sans-serif;
+    text-align: center;
+}
+.contatos img{
+    width: 100px;
 }
