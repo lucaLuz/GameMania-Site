@@ -11,6 +11,7 @@
 <body onload="mostrarPopup()">
     <header>
         <div class="container-grid posicionamento-header">
+            <a href="" onclick="mostrarMenu()"><img class="barras" src="img/menu.png" alt="menu de barras"></a>
             <a href=""><img class="logo-gamemania" src="img/Game Mania.png" alt="logo do site"></a>
             <nav id="menu" class="menu">
                 <a href="">Inicio</a>
@@ -22,7 +23,6 @@
                 <a href="">Cadastro</a>
                 <a href="">Entrar</a>
             </div>
-            <a href="" onclick="mostrarMenu()"><img class="barras" src="img/menu.png" alt="menu de barras"></a>
         </div>
     </header>
     <div class="banner">
@@ -36,10 +36,12 @@
         </div>
     </div>
     <div class="area-pesquisa">
-        <label for="">
+        <div class="area-button container">
+        <label for="pesquisa">
             <input type="search" id="pesquisa" placeholder="Pesquisa">
             <button type="submit"><img src="img/lupa 1.png" alt="lupa"></button>
             </label>
+        </div>
     </div>
     <div class="area-icones">
         <div class="icones container">
@@ -63,10 +65,13 @@
                 <h2>PUBG: New State já está disponível para celulares</h2>
                    <p>Desenvolvido pela Tencent, PUBG Mobile é a versão mobile licenciada de PLAYERUNKNOWN's Battlegrounds, grande sucesso da PUBG Corp. Mantendo a mesma proposta de Battle Royale do título original (100 jogadores entram num mapa e somente um deles sai vivo), o game se tornou um grande sucesso ao exigir hardwares menos poderosos e ao adaptar bem sua jogatina ao ambiente mobile.</p>
             </div>
+            <div class="mobile">
+                <p>Desenvolvido pela Tencent, PUBG Mobile é a versão mobile licenciada de PLAYERUNKNOWN's Battlegrounds, grande sucesso da PUBG Corp. Mantendo a mesma proposta de Battle Royale do título original <a href="">Leia Mais...</a></p>
+             </div>
         </div>
     </section>    
         <section class="secao-marcas">
-            <div class="marcas">
+            <div class="marcas container">
                 <a class="razer" href=""><img src="img/razer.png"></a>
                 <a href=""><img src="img/xbox.png"></a>
                 <a class="riot" href=""><img src="img/riot.png"></a>
