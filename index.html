@@ -11,7 +11,7 @@
 <body onload="mostrarPopup()">
     <header>
         <div class="container-grid posicionamento-header">
-            <a href="" onclick="mostrarMenu()"><img class="barras" src="img/menu.png" alt="menu de barras"></a>
+            <a href="" id="barras"><img class="barras" src="img/menu.png" alt="menu de barras"></a>
             <a href=""><img class="logo-gamemania" src="img/Game Mania.png" alt="logo do site"></a>
             <nav id="menu" class="menu">
                 <a href="">Inicio</a>
@@ -51,12 +51,34 @@
             <a href=""><img src="img/produtos.png"></a>
     </div>
     </div>
-    <section class="carrousel">
-        <div class="produtos-carrousel">
-            <a href=""><img src="img/cpu.png" alt=""></a>
-            <a href=""><img src="img/pc.png" alt=""></a>
-            <a href=""><img src="img/cadeira.png" alt=""></a>
-            <a href=""><img src="img/headset.png" alt=""></a>
+    <section id="carouselSite" class="carousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/cadeira.png" class="img-fluid">
+                <img src="img/cadeira.png" class="img-fluid">
+                <img src="img/cadeira.png" class="img-fluid">
+                <img src="img/cadeira.png" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="img/mouse.png" class="img-fluid">
+                <img src="img/mouse.png" class="img-fluid">
+                <img src="img/mouse.png" class="img-fluid">
+                <img src="img/mouse.png" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pc.png" class="img-fluid">
+                <img src="img/pc.png" class="img-fluid">
+                <img src="img/pc.png" class="img-fluid">
+                <img src="img/pc.png" class="img-fluid">
+            </div>
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">proximo</span>
+            </a>
         </div>
     </section>
     <section class="secao-noticias">
@@ -72,10 +94,10 @@
     </section>    
         <section class="secao-marcas">
             <div class="marcas container">
-                <a class="razer" href=""><img src="img/razer.png"></a>
-                <a href=""><img src="img/xbox.png"></a>
-                <a class="riot" href=""><img src="img/riot.png"></a>
-                <a href=""><img src="img/unity.png"></a>
+                <a class="razer" href="https://www.razer.com/"><img src="img/razer.png"></a>
+                <a href="https://www.xbox.com/pt-BR"><img src="img/xbox.png"></a>
+                <a class="riot" href="https://www.riotgames.com/en"><img src="img/riot.png"></a>
+                <a href="https://unity.com/pt"><img src="img/unity.png"></a>
             </div>
         </section>
         <footer>   
@@ -110,7 +132,7 @@
                  </div>
             </div>
         </footer>
-        <script>
+        <!-- <script>
               let menu = document.getElementById("menu");
 
                 function mostrarMenu() {
@@ -119,8 +141,9 @@
                 }else{
                     menu.style.display = "none"
                 }
-}
+} -->
         </script>
+        <script src="js/jquery-3.6.0.js"></script>
         <script src="js/script.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 

@@ -124,11 +124,12 @@ button{
 .loja-icone img{
     width: 161px;
 }
-.carrousel{
+.carousel{
     height: 300px;
     background-image: url(../img/Group\ 4.png);
 }
-.produtos-carrousel img{
+.carousel-item img{
+    align-items: center;
     margin: 0px 92px;
 }
 .secao-noticias{
@@ -224,7 +225,13 @@ footer{
         width: 90%;
     }
     .menu{
+        flex-direction: column;
         display: none;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        background-color: black;
     }
     .login{
         width: 272px;
@@ -237,6 +244,9 @@ footer{
         width: 50px;
         left: 0px;
         position: relative;
+    }
+    .menu-ativo{
+        display: flex;
     }
     .banner{
         height: 269px;
@@ -375,12 +385,25 @@ footer{
         align-items: center;
         margin: 0px 120px 0px 12px;
     }
+    .menu{
+        flex-direction: column;
+        display: none;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        background-color: black;
+    }
     .login a{
+        font-family: 'Rambla', sans-serif;
         display: none;
     }
     .barras{
         display: inline-block;
         width: 50px;
+    }
+    .menu-ativo{
+        display: flex;
     }
     .banner{
         height: 335px;
