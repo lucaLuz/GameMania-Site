@@ -12,12 +12,19 @@
 //     )
 // }
 // )
-
-
-
-
 $( document ).ready(function() {
     $("#barras").click(function () {
         $("#menu").toggleClass("menu-ativo")
     })
 })
+$(document).ready(function(){
+    $("#banner-carrosel img:eq(0)").addClass("banner-carrosel-ativo").show()
+})
+function slide(){
+    if($(".banner-carrosel-ativo").next().length ){
+        $(".banner-carrosel-ativo").removeClass("banner-carrosel-ativo").hide().next().addClass("banner-ativo").show()
+    }else{
+        $(".banner-carrosel-ativo").removeClass().hide()
+        $("#banner-carrosel img:eq(0)").addClass("banner-carrosel-ativo").show()
+    }
+}

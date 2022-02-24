@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-img, svg{
+.logo-gamemania img{
     width: 313px;
 }
 .menu a{
@@ -59,8 +59,11 @@ img, svg{
     background-repeat:none ;
     background-size: cover;
 }
-.banner img{
+.banner-carrosel img{
     display: none;
+}
+.banner-carrosel-ativo{
+    display: flex;
 }
 .texto-banner h1{
     width: 712px;
@@ -130,7 +133,11 @@ button{
 }
 .carousel-item img{
     align-items: center;
-    margin: 0px 92px;
+    margin: 0px 110px;
+    width: 257px;
+}
+.carousel-item p{
+    margin: 0px 0px 0px;
 }
 .secao-noticias{
     height: 1230px;
@@ -305,8 +312,12 @@ footer{
     .loja-icone img{
         width: 88px;
     }
-    .carrousel{
-        height: 122px;
+    .carousel{
+        height: 195px;
+    }
+    .carousel-item img{
+        margin: 0 9px;
+        width: 170px;
     }
     .produtos-carrousel{
         display: flex;
