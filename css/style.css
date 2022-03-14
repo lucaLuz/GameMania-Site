@@ -133,11 +133,15 @@ button{
 }
 .carousel-item img{
     align-items: center;
-    margin: 0px 110px;
     width: 257px;
 }
-.carousel-item p{
-    margin: 0px 0px 0px;
+.banner-legal{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.banner-legal p{
+    color: white;
 }
 .secao-noticias{
     height: 1230px;
