@@ -20,7 +20,7 @@ setInterval(slide, 1000)
 
 function slide(){
     if($(".banner-carrosel-ativo").next().length ){
-        $(".banner-carrosel-ativo").removeClass("banner-carrosel-ativo").hide().next().addClass("banner-ativo").show()
+        $(".banner-carrosel-ativo").removeClass("banner-carrosel-ativo").hide().next().addClass("banner-carrosel-ativo").show()
     }else{
         $(".banner-carrosel-ativo").removeClass().hide()
         $("#banner-carrosel img:eq(0)").addClass("banner-carrosel-ativo").show()

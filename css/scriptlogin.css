@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rajdhani:wght@500&family=Rambla&family=Rosarivo&family=Source+Serif+4:wght@300&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+body{
+    background-image: url(../img/imagenlogin1.jpg);
 }
 header{
     background-color: black;
@@ -10,20 +14,52 @@ header{
 .cabeçalho-login img{
     align-items: center;
     width: 223px;
-    margin-top: 38px;
+    margin-top: 25px;
+}
+form h1{
+    font-family: 'Rambla', sans-serif;
+    text-align: center;
+    color: white;
 }
 form{
-    display: block;
-    margin-top: 0em;
+    background-color: black;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-.entrar-input{
+form input[type=email],
+form input[type=password]{
     width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
 }
-.entrar-input --column{
-    flex-direction: column;
-    align-items: stretch;
+form input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #591283;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+form input[type=submit]:hover{
+    background-color:#410f5f ;
+}
+form input[type=email]:focus{
+    outline: 0;
+}
+form input[type=password]:focus{
+    outline: 0;
+}
+form a{
+    text-decoration: none;
+    color:#591283;
+    margin: 53px;
 }
