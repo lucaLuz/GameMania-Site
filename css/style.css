@@ -8,6 +8,14 @@ header{
     background-color: black;
     height: 84px;
 }
+#header{
+    height: 70px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .container-grid{
     width: 1920px;
     height: 100%;
@@ -19,17 +27,23 @@ header{
 .logo-gamemania img{
     width: 313px;
 }
-.menu a{
-    margin: 0 42px;
-    color: white;
+#menu a{
+    display: block;
+    padding: 3.5rem;
     text-decoration: none;
+    color: white;
     font-family: 'Rambla', sans-serif;
     text-transform: lowercase;
     font-size: 40px;
 }
-.menu{
+#menu a:hover{
+    background:rgba(19, 19, 19, 0.01);
+}
+#menu{
     width: 912px;
     display: flex;
+    list-style: none;
+    gap: .5rem;
 }
 .login a{
     margin: 0px 18px 0px;
@@ -43,8 +57,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.barras{
-    width: 100px;
+#btn-menu{
+    display: none;
+}
+#entrar-mobile{
     display: none;
 }
 .posicionamento-header{
@@ -108,7 +124,7 @@ input{
     margin:24px 0px 0px;
     padding: 0px 100px 0px;
 }
-button{
+.area-pesquisa button{
     background-color: transparent;
     border: none;
     margin: -120px
@@ -234,37 +250,69 @@ footer{
     width: 100px;
 }
 @media screen and (max-width: 1200px) {
-    img, svg {
-        width: 269px;
-        align-items: center;
-        margin: 0px 8px 0px 6px;
+    #nav{
+        display: flex;
+    }
+    #menu a{
+        padding: .5rem;
+    }
+    .logo-gamemania{
+        width: 200px;
     }
     .container-grid{
         width: 90%;
     }
-    .menu{
-        flex-direction: column;
+    #menu{
         display: none;
         width: 250px;
-        height: 250px;
+        height: 300px;
         position: absolute;
-        top: 0;
+        top: 70px;
+        right: 0px;
         background-color: black;
+        z-index: 1000;
+    }
+    #btn-menu{
+        display: block;
+    }
+    #btn-menu img{
+        width: 50px;
+    }
+    #nav.active #menu{
+        display: block;
     }
     .login{
-        width: 272px;
+        display: none;
     }
-    .login a{
-        font-size: 25px;
+    #entrar-mobile{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        border-radius: 15px;
+        background-color: #591283;
+        font-weight: bold;
+        width: 84px;
+        margin: 32px 0px 0px 0px;
+        height: 26px;
+        font-family: 'Rambla', sans-serif;
     }
     .barras{
-        display: inline-block;
+        display: block;
         width: 50px;
         left: 0px;
         position: relative;
     }
-    .menu-ativo{
+    #barras{
+        display: block;
+    }
+    #menu.active #barras{
         display: flex;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        margin: 18px;
     }
     .banner{
         height: 269px;
@@ -407,9 +455,9 @@ footer{
         height: 55px;
     }
     img, svg {
-        width: 300px;
-        align-items: center;
-        margin: 0px 120px 0px 12px;
+    width: 175px;
+    align-items: center;
+    margin: 0px 8px 0px 6px;
     }
     .menu{
         flex-direction: column;
@@ -424,11 +472,18 @@ footer{
         font-family: 'Rambla', sans-serif;
         display: none;
     }
-    .barras{
-        display: inline-block;
-        width: 50px;
+    #menu{
+        display: none;
     }
-    .menu-ativo{
+    #barras{
+        display: block
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        margin: 25px;
+    }
+    #menu.active #barras{
         display: flex;
     }
     .banner{
@@ -436,8 +491,8 @@ footer{
         background-image: url(../img/Banner.png);
     }
     .banner-legal p {
-        width: 1px;
-        margin: 0px 82px 0px -63px;
+    width: 1px;
+    margin: 0px 82px 0px -63px;
     }
     .posicao-texto{
         padding: 0 135px;
